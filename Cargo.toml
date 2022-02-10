@@ -1,0 +1,6 @@
+[workspace]
+
+members = [
+    "Register",
+    "VsConverter"
+]
