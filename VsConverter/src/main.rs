@@ -34,7 +34,7 @@ fn main() {
                 new_file_name.push_str(".png");
                 let result_file_path = p.parent().unwrap().join(new_file_name);
                 let result_file_path = result_file_path.to_str().unwrap();
-                Command::new("magick").args(&[p_path, "-fuzz", "0.8%", "-fill", "none", "-draw","alpha 0,0 floodfill",&result_file_path]).spawn();
+                Command::new("magick").args(&[p_path, "-fuzz", "2%", "-fill", "none", "-draw","alpha 0,0 floodfill",&result_file_path]).spawn();
                 println!("转换中... {}, {}", p.display(), result_file_path);
             }
 
